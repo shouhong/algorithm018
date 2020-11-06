@@ -10,7 +10,7 @@ public:
     set<int> s;
     vector<int> v;
     vector<vector<int> > res;
-    // 全排列：1 到 n 个位置，每个位置从 1 - n 中选择一个数来填充
+    // 全排列：1 到 k 个位置，每个位置从 1 - n 中选择一个数来填充
     // 用一个 set 保证选择不重复
     void dfs_perm(int cur, int n, int k) {
         if (cur > k) {
