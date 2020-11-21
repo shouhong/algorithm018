@@ -17,7 +17,10 @@ public:
         int preMaxPos = 0; 
         int maxPos = 0;
         int steps = 0;
-        for (int i = 0; i < nums.size() && i <= maxPos; i++) {
+        // 注意是 n < nums.size() - 1，不是 n < nums.size() 
+        // 对于只有一个元素的情况，不会进入 for 循环，返回 0（不用跳）
+        // 如果是  n < nums.size() ，则会进入 for 循环，返回错误值 1
+        for (int i = 0; i < nums.size() - 1  && i <= maxPos; i++) {
             maxPos = max(maxPos, i+nums[i]);
             // 可以到达最后一个元素，结束
             if (maxPos >= nums.size()-1) {
@@ -29,7 +32,7 @@ public:
                 steps++;
             }
         }
-        return -1;
+        return 0;
     }
 };
 
