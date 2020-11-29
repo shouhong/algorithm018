@@ -1,7 +1,7 @@
 // 题目：64. 最小路径和
 // 链接：https://leetcode-cn.com/problems/minimum-path-sum/
 // 思路：动态规划
-// 状态转移方程：dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+// 状态转移方程：dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
 // 结果：
 
 #include <iostream>
