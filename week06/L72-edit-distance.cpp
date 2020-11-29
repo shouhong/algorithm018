@@ -40,6 +40,7 @@ public:
                 int left = dp[i][j-1] + 1;
                 int up = dp[i-1][j] + 1;
                 int left_up = dp[i-1][j-1];
+                // 注意：这里 word1 和 word2 的下标是从 0 开始的，需要减 1。
                 if (word1[i-1] != word2[j-1]) left_up++;
                 dp[i][j] = min(left_up, min(left, up));
             }
