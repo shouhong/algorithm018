@@ -7,7 +7,7 @@
 	* 每个节点用一个数组存储所有可能的下一个节点（即单词的下一个字母）的指针。所以可以将 Trie 树看作一棵 26 叉树（26 位字母表中的字母数）。
 	* 从根节点到任意一个叶节点的路径上所有节点的字母按顺序拼成一个完整的单词。
 2. Trie 树内部实现
-	![](./Trie_Tree.png)
+	![](https://github.com/shouhong/algorithm018/blob/master/week07/Trie_Tree.png)
 3. Trie 的核心思想：
 	* 用空间换时间。
 	* 利用字符串的公共前缀来降低查询的时间开销，常被搜索引擎用于按已经输入的前缀提示完整单词。
@@ -22,7 +22,7 @@
 #### AVL 树
 1. AVL 树定义：平衡因子（左右子树的高度差）为 -1，0，1 的二叉搜索树。
 2. 进行平衡的四种操作: 右旋、左旋、左右旋、右左旋
-	![](./AVL_Tree.png)
+	![](https://github.com/shouhong/algorithm018/blob/master/week07/AVL_Tree.png)
 
 #### 红黑树
 1. 红黑树：一种近似平衡的二叉搜索树，任何一个节点的左右子树的高度差小于两倍。定义如下：
@@ -32,7 +32,7 @@
 	* 不能有相邻的两个红色节点
 	* 从任一结点到其每个叶子的所有路径都包含相同数目的黑色结点
 2. 红黑树示例：
-   ![](./RedBlack_Tree.png)
+   ![](https://github.com/shouhong/algorithm018/blob/master/week07/RedBlack_Tree.png)
 
 #### AVL 树 VS 红黑树
 1. AVL 树更严格，查询速度更快
